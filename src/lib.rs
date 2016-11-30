@@ -78,7 +78,7 @@ impl Command for ThrottleCommand {
     // separated list. See the Redis module API documentation for a complete
     // list of the ones that are available.
     fn str_flags(&self) -> &'static str {
-        "write"
+        "write fast deny-oom random"
     }
 }
 
